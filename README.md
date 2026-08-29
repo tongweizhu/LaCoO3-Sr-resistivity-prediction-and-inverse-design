@@ -1,0 +1,1 @@
+# LaCoO3-Sr-resistivity-prediction-and-inverse-design

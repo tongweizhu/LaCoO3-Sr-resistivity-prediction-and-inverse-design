@@ -1,0 +1,20 @@
+# Runtime tested with Python 3.12.
+# Keep the model-loading stack pinned: the supplied GWO-75 preprocessors were
+# saved with scikit-learn 1.7.2; the adapted estimator is serialized with
+# XGBoost 3.1.1 for this release.
+fastapi==0.120.0
+joblib==1.5.2
+matplotlib==3.10.7
+numpy==2.3.4
+nvidia-nccl-cu12==2.28.7 ; platform_system == "Linux" and platform_machine != "aarch64"
+openpyxl==3.1.5
+pandas==2.3.3
+requests==2.32.5
+rio-ui==0.11.1
+scikit-learn==1.7.2
+scipy==1.16.2
+seaborn==0.13.2
+# rio-ui 0.11.1 requires uvicorn[standard] ~= 0.29.0.  Do not upgrade this
+# independently to the 0.38 series used by the legacy environment.
+uvicorn[standard]==0.29.0
+xgboost==3.1.1

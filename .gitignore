@@ -1,0 +1,23 @@
+# Canonical local runtime environment and state
+.venv/
+.run/
+
+# Legacy environments retained only until the user explicitly removes them.
+interface/
+zhu/models/backendenv/
+zhu/models/backendenv~/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local settings and editor files
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
